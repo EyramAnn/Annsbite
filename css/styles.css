@@ -1,0 +1,438 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#logo {
+  width: 140px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  align-items: center;
+  position: fixed;
+  width: 90vw;
+  z-index: 100;
+}
+
+#nav-links {
+  display: flex;
+  column-gap: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  z-index: 90;
+}
+
+#nav-links span:hover {
+  cursor: pointer;
+  color: red;
+
+}
+
+#hero {
+  background-image: url(../assests/images/hroimage.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+}
+
+#hero-overlay {
+  background-color: rgba(49, 48, 48, 0.7);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#welcome {
+  font-size: 65px;
+}
+
+#anns {
+  font-size: 85px;
+}
+
+.menu-button {
+  background-color: white;
+  color: #d90090;
+  border: none;
+  padding: 8px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 150px;
+  /* background-color: rgba(233, 221, 221, 0.2); */
+  column-gap: 120px;
+}
+
+.sub-header {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.sub-header span:nth-child(1) {
+  font-size: 30px;
+  color: rgb(230, 35, 35);
+}
+
+.sub-header span:nth-child(2) {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(34, 34, 34);
+}
+
+
+#about-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgb(102, 102, 102);
+}
+
+#about-image {
+  height: 63vh;
+  width: 26vw;
+  border-radius: 20px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  transition: 0.7s ease;
+
+
+
+} 
+#about-image:hover {
+  transform:scale(1.1);
+  /* tansition: scale(1.1);
+  -webkit-transition: scale(1.1) 
+   -moz-transition: scale(1.1)
+  */
+ 
+}
+
+#about-link {
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#about-link a {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(102, 102, 102);
+}
+
+#about-link a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#discover {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("../assests/images/food.avif");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
+
+}
+  #discover_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  #ann {
+    color: white;
+  }
+
+
+  #screens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 90px; 
+    margin: 80px 150px; 
+    column-gap: 10px;
+}  
+
+
+.romantic , .delicious, .wines{
+   width: 300px;
+   padding-right: 120px;
+ 
+}
+
+
+.romantic h4 , .delicious h4 , .wines h4{
+  font-family: poppins-light;
+  font-size: 20px;
+  font-weight: 70;
+  letter-spacing: 3px
+}
+
+
+.romantic p , .delicious p , .wines p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+   
+}
+
+.romantic img , .delicious img , .wines img {
+    border-radius: 15px;
+}
+
+.romantic a , .delicious a , .wines a {
+   text-decoration: none;
+   font-size: 12px;
+   color: rgb(34, 34, 34);
+} 
+
+.romantic a:hover , .delicious a:hover , .wines a:hover{
+  color: red;
+  cursor: pointer;
+}
+
+#menu{ 
+  background-color:#F5F2EC;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:  10px;
+  width: 80lvw
+
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.group1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 520px;
+}
+
+.group2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 250px;
+}
+
+.group3 {
+  height:250px;
+}
+
+.lunch-btn {
+  position: absolute;
+  top: 2930px;
+  left: 230px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 18px 35px;
+  border: none;
+  border-radius: 10px; 
+}
+
+
+.dinner-btn {
+  position: absolute;
+  top: 2930px;
+  left: 600px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 18px 35px;
+  border: none;
+  border-radius: 10px;  
+}
+
+
+.drink-btn {
+  position: absolute;
+  top: 2780px;
+  left: 960px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 10px;  
+}
+
+
+
+.starter-btn {
+  position: absolute;
+  top: 3030px;
+  left: 960px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 10px;  
+}
+
+.happy-btn {
+  position: absolute;
+  top: 3320px;
+  left: 365px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 18px 35px;
+  border: none;
+  border-radius: 10px; 
+}
+
+
+.dessert-btn {
+  position: absolute;
+  top: 3325px;
+  left: 960px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+
+#video-sec{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#video {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+#video-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+#video-overlay .sub-header span:last-child {
+  color: white;
+
+
+}
+#reservation {
+  background-color: #EFEFEF; 
+  padding: 120px;
+  display: flex; 
+  justify-content: space-between;
+  
+}
+
+#reservation img {
+ width: 40%;
+  height: 430px;
+  border-radius: 15px;
+}
+
+
+#input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; 
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#input-grid input {
+  width: 250px;
+  height: 43px;
+  border-radius: 10px;
+  border: 2px solid #dbd0d0;
+  color:#C0C0C0;
+  padding-left: 15px;
+}
+
+ #table {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 35px 0 0 220px;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  letter-spacing: 1.3px;
+}
+
+#table:hover {
+  cursor: pointer;
+  background-color: red;
+}
